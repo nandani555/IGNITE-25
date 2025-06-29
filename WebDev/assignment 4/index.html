@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM MANIPULATION</title>
+</head>
+
+<body>
+    <div>
+        <h3>question 1</h3>
+        <p id="text">Original Text</p>
+        <button onclick="document.getElementById('text').textContent = 'Hello, JavaScript World!'">Change Text</button>
+    </div>
+    <div>
+        <h3>question 2</h3>
+        <button onclick="visibility()">Click to toggle</button>
+        <div id="toggle">click the button to toggle</div>
+    </div>
+    <div>
+        <h3>question 3</h3>
+        <input type="text" id="itemInput" placeholder="Enter item">
+        <button onclick="addItem()">Add Item</button>
+        <ul id="itemList"></ul>
+    </div>
+    <div>
+        <h3>question 4</h3>
+        <img id="hover" src="original.png" alt="Image" width="300" height="200">
+    </div>
+    <div>
+        <h3>question 5</h3>
+        <form onsubmit="showAlert(event)">
+            <input type="text" id="userInput" placeholder="Type something">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <div>
+        <h3>question 6</h3>
+        <button onclick="changeBackgroundColor()">Change Background</button>
+    </div>
+    <div>
+        <h3>question 7</h3>
+        <textarea id="textArea" oninput="updateCharCount()" placeholder="Type here..."></textarea>
+        <p>Characters: <span id="charCount">0</span></p>
+
+    </div>
+    <div>
+        <h3>question 8</h3>
+        <ul id="list">
+    <li>Item 1 <button class="delete-btn">Delete</button></li>
+    <li>Item 2 <button class="delete-btn">Delete</button></li>
+    <li>Item 3 <button class="delete-btn">Delete</button></li>
+  </ul>
+
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
